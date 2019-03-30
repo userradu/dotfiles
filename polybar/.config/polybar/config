@@ -61,7 +61,7 @@ font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
 font-5 = "Font Awesome 5 Brands:pixelsize=10;1"
 
 modules-left = i3
-modules-center = popup-calendar
+modules-center = 
 modules-right = backlight pulseaudio xkeyboard battery updates-available date powermenu
 
 tray-position = right
@@ -296,7 +296,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
+date = " %d %b %y"
 date-alt = " %A, %d %b %Y"
 
 time =  %H:%M
@@ -306,7 +306,7 @@ format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #0a6cf5
 
-label = %time%
+label = %date% %time%
 
 [module/popup-calendar]
 type = custom/script
